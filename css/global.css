@@ -51,6 +51,7 @@
 }
 
 :root {
+    /* colors */
     --midnight-green: rgba(1, 78, 86, 1);
     --ligt-color: rgba(246, 126, 126, 1);
     --white: rgba(225, 225, 225, 1);
@@ -59,6 +60,25 @@
     --dip-jungle-blue: rgba(0, 64, 71, 1);
     --sacramento-state-blue: rgba(1, 47, 52, 1);
     --dark-green: rgba(0, 37, 41, 1);
+
+    /* font */
+    /* font weight */
+
+    --font-weight-700: 700;
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+
+    --h1-large-font-size-100: 10rem;
+    --h1-large-line-heigt-100: 1;
+
+    --h1-small-font-size-64: 6.4rem;
+    --h1-small-line-height-56: 0.88;
+
+    --h2-font-size-48: 4.8rem;
+    --h2-line-heigt-48: 1;
+
+    --h3-font-size-18: 1.8rem;
+    --h3-line-height-28: 1.56;
 }
 
 *,
@@ -154,9 +174,6 @@ main {
 }
 
 /* footer */
-.footer {
-}
-
 .footer-container {
     padding: 7.6rem 5rem;
     position: relative;
@@ -169,10 +186,6 @@ main {
     left: 0;
 }
 
-.started-box {
-}
-.container {
-}
 .started-box__title {
     font-size: 48px;
     line-height: 48px;
@@ -183,5 +196,63 @@ main {
     border-color: var(--sacramento-state-blue);
     color: var(--sacramento-state-blue);
 }
-.btn {
+
+.footer-info__box {
+    background-color: var(--dark-green);
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+}
+
+.footer-info-container {
+    justify-content: space-between;
+    gap: 12.5rem;
+}
+
+.footer-info__list {
+    justify-content: flex-start;
+}
+
+.footer-info__location {
+    max-width: 445px;
+    width: 100%;
+}
+
+.footer-info__location--description {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.solicial-links__box {
+    flex-direction: column;
+    gap: 5rem;
+    align-items: flex-end;
+}
+
+.solicial-links__list {
+    gap: 1.6rem;
+}
+
+.solicial-links__item {
+    display: inline;
+}
+
+.solicial-links__link {
+    display: inline;
+}
+
+.solicial-link__img {
+}
+
+.solicial-links__description {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: right;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
 }
