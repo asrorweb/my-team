@@ -1,0 +1,213 @@
+/* hero */
+.hero {
+    background-color: var(--midnight-green);
+    color: #fff;
+    padding-top: 13rem;
+    padding-bottom: 25rem;
+    position: relative;
+}
+
+.hero__bg--img1 {
+    position: absolute;
+    left: 0;
+    max-width: 100px;
+    width: 100%;
+}
+
+.hero__bg--img2 {
+    position: absolute;
+    bottom: 0;
+    right: 16.5rem;
+    max-width: 358px;
+    width: 100%;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 635px 445px;
+}
+
+.hero__title {
+    margin: 0;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.hero__title span {
+    color: var(--ligt-color);
+}
+
+.hero__descroption--box {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.hero__descroption--box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: var(--raptur-blue);
+}
+
+.hero__description {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    vertical-align: bottom;
+}
+
+/* manage team */
+.manage-team {
+    background-color: var(--sacramento-state-blue);
+    color: #fff;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    position: relative;
+}
+
+.manage-bg-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.manage-tema-box {
+    display: grid;
+    grid-template-columns: 445px 540px;
+    gap: 12.5rem;
+    padding-top: 5.8rem;
+    position: relative;
+}
+
+.manage-tema-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: var(--ligt-color);
+}
+
+.manage-team__title {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.manage-team__item:not(:last-child) {
+    margin-bottom: 3.2rem;
+}
+
+.manage-team__item {
+    gap: 2.4rem;
+}
+
+.manage-team__img {
+    width: 72px;
+    height: 72px;
+}
+
+.manage-team__list--title {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--ligt-color);
+    margin-bottom: 1.6rem;
+}
+
+.manage-team__list--description {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+/* succes stories */
+.succes-stories {
+    background-color: var(--dip-jungle-blue);
+    position: relative;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    color: #fff;
+    text-align: center;
+}
+
+.succes-stories__bg--img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.succes-stories__bg--img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.succes-stories__container {
+}
+
+.succes-stories__title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 9.2rem;
+}
+
+.succes-stories__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.succes-stories__item {
+    position: relative;
+}
+
+.succes-stories__item::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 56px;
+    background: url("../images/succes-stories-quote.svg");
+    top: -3rem;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.succes-stories__item--description {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 2.4rem;
+}
+
+.succes-stories__item--subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--raptur-blue);
+    margin-bottom: 0.2rem;
+}
+
+.succes-stories__item--subdescription {
+    font-family: "Livvic";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 3.2rem;
+}
+
+.succes-stories__item--img {
+    width: 62px;
+    height: 62px;
+}

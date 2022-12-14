@@ -1,0 +1,187 @@
+/* Global */
+
+/* fonts */
+/* livvic-regular - latin */
+@font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("../fonts/livvic-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../fonts/livvic-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-500italic - latin */
+@font-face {
+    font-family: "Livvic";
+    font-style: italic;
+    font-weight: 500;
+    src: local(""),
+        url("../fonts/livvic-v13-latin-500italic.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../fonts/livvic-v13-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-600 - latin */
+@font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    src: local(""), url("../fonts/livvic-v13-latin-600.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../fonts/livvic-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-700 - latin */
+@font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url("../fonts/livvic-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-700italic - latin */
+@font-face {
+    font-family: "Livvic";
+    font-style: italic;
+    font-weight: 700;
+    src: local(""),
+        url("../fonts/livvic-v13-latin-700italic.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../fonts/livvic-v13-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+    --midnight-green: rgba(1, 78, 86, 1);
+    --ligt-color: rgba(246, 126, 126, 1);
+    --white: rgba(225, 225, 225, 1);
+    --raptur-blue: rgba(121, 200, 199, 1);
+    --plice-blue: rgba(44, 98, 105, 1);
+    --dip-jungle-blue: rgba(0, 64, 71, 1);
+    --sacramento-state-blue: rgba(1, 47, 52, 1);
+    --dark-green: rgba(0, 37, 41, 1);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Livvic, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    height: 100%;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1190px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Buttons */
+.btn {
+    border: 2px solid #ffffff;
+    border-radius: 24px;
+    padding: 0.9rem 3.3rem 1.1rem 3.2rem;
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* header */
+.header {
+    background-color: var(--midnight-green);
+    padding-top: 7.3rem;
+}
+
+.header-container {
+    justify-content: flex-start;
+    gap: 8rem;
+}
+
+.navigation {
+    width: 100%;
+}
+.navigation__list {
+    /* margin-right: auto; */
+    gap: 4rem;
+}
+
+.navigation__link {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+/* main */
+main {
+    flex-grow: 1;
+}
+
+/* footer */
+.footer {
+}
+
+.footer-container {
+    padding: 7.6rem 5rem;
+    position: relative;
+    background-color: var(--ligt-color);
+}
+
+.footer-bg-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.started-box {
+}
+.container {
+}
+.started-box__title {
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--sacramento-state-blue);
+}
+
+.started-box__link {
+    border-color: var(--sacramento-state-blue);
+    color: var(--sacramento-state-blue);
+}
+.btn {
+}
