@@ -54,7 +54,7 @@
     /* colors */
     --midnight-green: rgba(1, 78, 86, 1);
     --ligt-color: rgba(246, 126, 126, 1);
-    --white: rgba(225, 225, 225, 1);
+    --white: rgba(255, 255, 255, 1);
     --raptur-blue: rgba(121, 200, 199, 1);
     --plice-blue: rgba(44, 98, 105, 1);
     --dip-jungle-blue: rgba(0, 64, 71, 1);
@@ -62,6 +62,9 @@
     --dark-green: rgba(0, 37, 41, 1);
 
     /* font */
+    --font-style-italic: italic;
+    --font-style-normal: normal;
+
     --font-weight-700: 700;
     --font-weight-600: 600;
     --font-weight-500: 500;

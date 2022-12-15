@@ -1,0 +1,199 @@
+.hero {
+    position: relative;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    color: var(--white);
+    background-color: var(--midnight-green);
+}
+
+.hero__bg--img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-container {
+    gap: 3rem;
+}
+
+.hero__title {
+    max-width: 350px;
+    width: 100%;
+    margin: 0;
+    color: var(--white);
+    font-size: var(--h1-small-font-size-64px);
+    line-height: var(--h1-small-line-height-56px);
+}
+
+.hero__descroption--box {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding-top: 4rem;
+}
+
+.hero__descroption--box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: var(--ligt-color);
+}
+
+.hero__description {
+    font-weight: var(--font-weight-600);
+    font-size: var(--h3-font-size-18px);
+    line-height: var(--h3-line-height-28px);
+}
+
+/* directors */
+
+.directors {
+    position: relative;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    color: var(--white);
+    background-color: var(--dip-jungle-blue);
+    text-align: center;
+}
+
+.directors__top--bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.directors__bottom--bgimg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.directors__title {
+    font-size: var(--h2-font-size-48px);
+    font-weight: var(--font-weight-700);
+    line-height: var(--h2-line-heigt-48px);
+    margin-bottom: 6.4rem;
+}
+
+.directors__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 7.6rem 3rem;
+}
+
+.directors__item {
+    background-color: var(--sacramento-state-blue);
+    /* border: 1px solid; */
+    /* padding: 3.5rem 2.4rem 5.6rem; */
+    position: relative;
+}
+
+/* front */
+.directors__item--front {
+    padding: 3.2rem 2.4rem 5.6rem;
+}
+
+.directors__item--img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 1.6rem;
+}
+
+.directors__item--username {
+    color: var(--raptur-blue);
+    font-size: var(--h3-font-size-18px);
+    font-weight: var(--font-weight-700);
+    line-height: var(--h3-line-height-28px);
+}
+
+.directors__item--userjob {
+    font-size: var(--p-font-size-15px);
+    font-weight: var(--font-weight-500);
+    font-style: var(--font-style-italic);
+    line-height: var(--p-line-height-25px);
+}
+
+.directors__item--button {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    bottom: -28px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--ligt-color);
+    color: #000;
+}
+
+/* front and  back when active*/
+.directors__item--active {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    bottom: -80%;
+}
+
+/* back */
+.directors__item--back {
+    height: 100%; /*qaytaman*/
+    background-color: var(--dark-green);
+    padding: 3.5rem 4.8rem 6.3rem;
+}
+
+.directors__item--back .directors__item--username {
+    margin-bottom: 0.8rem;
+}
+
+.directors__item--userjop--info {
+    font-size: var(--p-font-size-15px);
+    font-weight: var(--font-weight-600);
+    line-height: var(--p-line-height-25px);
+    margin-bottom: 2.4rem;
+}
+
+.directors__item--usersocial-lsit {
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.directors__item--usersocial-img {
+    display: flex;
+}
+
+/* clients */
+
+.clients {
+    position: relative;
+    color: var(--white);
+    background-color: var(--sacramento-state-blue);
+    text-align: center;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+
+.clients-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.clients__title {
+    font-size: var(--h2-font-size-48px);
+    font-weight: var(--font-weight-700);
+    line-height: var(--h2-line-heigt-48px);
+    margin-bottom: 6.4rem;
+}
+
+.clients__list {
+    gap: 8rem;
+}
+
+.clients__item--img {
+    max-width: 180px;
+    width: 100%;
+}
