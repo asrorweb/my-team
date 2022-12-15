@@ -1,7 +1,7 @@
 /* hero */
 .hero {
     background-color: var(--midnight-green);
-    color: #fff;
+    color: var(--white);
     padding-top: 13rem;
     padding-bottom: 25rem;
     position: relative;
@@ -29,8 +29,8 @@
 
 .hero__title {
     margin: 0;
-    font-size: 100px;
-    line-height: 100px;
+    font-size: var(--h1-large-font-size-100px);
+    line-height: var(--h1-large-line-heigt-100px);
 }
 
 .hero__title span {
@@ -54,16 +54,15 @@
 }
 
 .hero__description {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    vertical-align: bottom;
+    font-weight: var(--font-weight-600);
+    font-size: var(--h3-font-size-18px);
+    line-height: var(--h3-line-height-28px);
 }
 
 /* manage team */
 .manage-team {
     background-color: var(--sacramento-state-blue);
-    color: #fff;
+    color: var(--white);
     padding-top: 14rem;
     padding-bottom: 14rem;
     position: relative;
@@ -94,8 +93,8 @@
 }
 
 .manage-team__title {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: var(--h2-font-size-48px);
+    line-height: var(--h2-line-heigt-48px);
 }
 
 .manage-team__item:not(:last-child) {
@@ -112,17 +111,17 @@
 }
 
 .manage-team__list--title {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: var(--h3-font-size-18px);
+    line-height: var(--h3-line-height-28px);
     color: var(--ligt-color);
     margin-bottom: 1.6rem;
 }
 
 .manage-team__list--description {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
-    color: #ffffff;
+    font-weight: var(--font-weight-600);
+    font-size: var(--p-font-size-15px);
+    line-height: var(--p-line-height-25px);
+    color: var(--white) fff;
     mix-blend-mode: normal;
     opacity: 0.8;
 }
@@ -133,7 +132,7 @@
     position: relative;
     padding-top: 14rem;
     padding-bottom: 14rem;
-    color: #fff;
+    color: var(--white);
     text-align: center;
 }
 
@@ -150,8 +149,8 @@
 }
 
 .succes-stories__title {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: var(--h2-font-size-48px);
+    line-height: var(--h2-line-heigt-48px);
     margin-bottom: 9.2rem;
 }
 
@@ -180,17 +179,17 @@
 }
 
 .succes-stories__item--description {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
+    font-weight: var(--font-weight-600);
+    font-size: var(--p-font-size-15px);
+    line-height: var(--p-line-height-25px);
     position: relative;
     z-index: 10;
     margin-bottom: 2.4rem;
 }
 
 .succes-stories__item--subtitle {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: var(--h3-font-size-18px);
+    line-height: var(--h3-line-height-28px);
     color: var(--raptur-blue);
     margin-bottom: 0.2rem;
 }
@@ -198,7 +197,7 @@
 .succes-stories__item--subdescription {
     font-family: "Livvic";
     font-style: italic;
-    font-weight: 500;
+    font-weight: var(--font-weight-500);
     font-size: 13px;
     line-height: 18px;
     margin-bottom: 3.2rem;
