@@ -88,7 +88,8 @@ textarea {
     color: var(--white);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline: 0;
 }
 
