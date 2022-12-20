@@ -166,7 +166,6 @@ a {
     width: 100%;
 }
 .navigation__list {
-    /* margin-right: auto; */
     gap: 4rem;
 }
 
@@ -176,6 +175,15 @@ a {
     font-size: var(--h3-font-size-18px);
     line-height: var(--h3-line-height-28px);
     color: var(--white);
+}
+
+.navigation__link:hover {
+    color: var(--ligt-color);
+}
+
+.header__link:hover {
+    background-color: var(--white);
+    color: var(--dark-green);
 }
 
 /* main */
@@ -205,6 +213,11 @@ main {
 .started-box__link {
     border-color: var(--sacramento-state-blue);
     color: var(--sacramento-state-blue);
+}
+
+.started-box__link:hover {
+    background-color: var(--sacramento-state-blue);
+    color: var(--white);
 }
 
 .footer-info__box {
@@ -254,8 +267,8 @@ main {
     display: inline;
 }
 
-.solicial-link__img {
-    display: flex;
+.solicial-links__link:hover svg path {
+    fill: var(--ligt-color);
 }
 
 .solicial-links__description {
