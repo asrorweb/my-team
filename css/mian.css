@@ -22,10 +22,14 @@
 
 .hero-container {
     display: grid;
-    grid-template-columns: 635px 445px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
 }
 
 .hero__title {
+    position: relative;
+    max-width: 635px;
+    width: 100%;
     margin: 0;
     font-size: var(--h1-large-font-size-100px);
     line-height: var(--h1-large-line-heigt-100px);
@@ -36,9 +40,12 @@
 }
 
 .hero__descroption--box {
+    max-width: 445px;
+    width: 100%;
     display: flex;
     align-items: flex-end;
     position: relative;
+    margin-left: auto;
 }
 
 .hero__descroption--box::before {
@@ -74,8 +81,8 @@
 
 .manage-tema-box {
     display: grid;
-    grid-template-columns: 445px 540px;
-    gap: 12.5rem;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 12.5rem; */
     padding-top: 5.8rem;
     position: relative;
 }
@@ -91,8 +98,16 @@
 }
 
 .manage-team__title {
+    max-width: 445px;
+    width: 100%;
     font-size: var(--h2-font-size-48px);
     line-height: var(--h2-line-heigt-48px);
+}
+
+.manage-team__list {
+    max-width: 540px;
+    width: 100%;
+    margin-left: auto;
 }
 
 .manage-team__item:not(:last-child) {
@@ -204,4 +219,87 @@
 .succes-stories__item--img {
     width: 62px;
     height: 62px;
+}
+
+/*========================== Tablet  ==========================*/
+@media only screen and (max-width: 768px) {
+    .hero__bg--img1 {
+        display: none;
+    }
+
+    .hero__bg--img2 {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .hero {
+        padding-top: 11.2rem;
+        padding-bottom: 25.6rem;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: var(--h1-small-font-size-64px);
+        line-height: var(--h1-small-line-height-56px);
+        font-weight: var(--font-weight-700);
+    }
+
+    .hero__descroption--box {
+        max-width: 457px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .hero__descroption--box::before {
+        height: 0;
+    }
+
+    .hero__description {
+        font-size: var(--p-font-size-15px);
+        line-height: var(--h3-line-height-28px);
+    }
+
+    .manage-tema-box {
+        grid-template-columns: 1fr;
+        gap: 6.4rem;
+        text-align: center;
+    }
+
+    .manage-team__title {
+        max-width: none;
+        width: 100%;
+    }
+
+    .manage-team__list {
+        margin-inline: auto;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .hero {
+        padding-top: 8rem;
+        padding-bottom: 19.7rem;
+    }
+
+    .hero-container {
+        gap: 1.8rem;
+    }
+
+    .hero__title {
+        font-size: 4rem;
+        line-height: 1;
+    }
+
+    .hero__descroption--box {
+        width: 100%;
+    }
+
+    .hero__description {
+        line-height: 1.87;
+    }
 }

@@ -29,6 +29,22 @@
                     />
                 </a>
                 <nav class="d-flex navigation">
+                    <!-- mobile exit img -->
+                    <button class="mobile__exit--button">
+                        <img
+                            class="mobile__exit--img"
+                            src="images/exit-img.svg"
+                            alt=""
+                        />
+                    </button>
+
+                    <!-- mobile menu bg img -->
+                    <img
+                        class="mobile__menu--bg"
+                        src="images/about-hero-bottom-img.svg"
+                        alt=""
+                    />
+
                     <ul class="d-flex navigation__list">
                         <li class="navigation__item">
                             <a class="navigation__link" href="#">home</a>
@@ -48,6 +64,21 @@
                         >contact us</a
                     >
                 </nav>
+
+                <!-- mobile menu button -->
+                <button class="mobile__menu--button">
+                    <svg
+                        width="20"
+                        height="17"
+                        viewBox="0 0 20 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <rect width="20" height="3" fill="white" />
+                        <rect y="7" width="20" height="3" fill="white" />
+                        <rect y="14" width="20" height="3" fill="white" />
+                    </svg>
+                </button>
             </div>
         </header>
 
@@ -250,7 +281,7 @@
             </div>
 
             <div class="footer-info__box">
-                <div class="d-flex footer-info-container container">
+                <div class="footer-info-container container">
                     <div class="site-logo-box">
                         <img
                             src="images/site-logo.svg"
@@ -279,7 +310,7 @@
                         </p>
                     </div>
 
-                    <div class="d-flex solicial-links__box">
+                    <div class="solicial-links__box">
                         <ul class="d-flex solicial-links__list">
                             <li class="solicial-links__item">
                                 <a href="#" class="solicial-links__link"
@@ -330,7 +361,9 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
 
+                    <div class="footer__since--box">
                         <p class="solicial-links__description">
                             Copyright 2020. All Rights Reserved
                         </p>
@@ -338,5 +371,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="js/about.js"></script>
     </body>
 </html>
